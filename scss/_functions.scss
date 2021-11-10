@@ -1,5 +1,7 @@
 // Colors
 $primary: var(--bs-primary);
+$lightenPrimary: rgba(#5d9731, $alpha: 0.1);
+$darkenPrimary: darken(#5d9731, 12%);
 $secondry: var(--bs-secondry);
 $lighten_paragraph: lighten(gray, 40%);
 $darken_paragraph: lighten(gray, 18%);
