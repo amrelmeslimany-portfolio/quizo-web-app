@@ -1,0 +1,25 @@
+{
+  "name": "quizo-web",
+  "version": "1.0.0",
+  "description": "this siteThis site I created for training on OOP Js for create small quiz with UI designing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amrelmeslimany-portfolio/quizo-web-app.git"
+  },
+  "keywords": [
+    "quiz",
+    "oop",
+    "js",
+    "questions"
+  ],
+  "author": "amr elmeslimany",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amrelmeslimany-portfolio/quizo-web-app/issues"
+  },
+  "homepage": "https://github.com/amrelmeslimany-portfolio/quizo-web-app#readme"
+}
