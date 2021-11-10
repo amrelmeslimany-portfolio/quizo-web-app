@@ -5,6 +5,7 @@ $darkenPrimary: darken(#5d9731, 12%);
 $secondry: var(--bs-secondry);
 $lighten_paragraph: lighten(gray, 40%);
 $darken_paragraph: lighten(gray, 18%);
+$bg_gradient: linear-gradient(135deg, $primary 30%, #319733);
 $white: #fff;
 // Font
 $font_family: 'Mohave',

@@ -13,6 +13,8 @@
         4. Why Us Section
         5. Specialist Section
         6. Features
+        7. Other Sections
+        8. Footers
 */
 
 // 1. Imports
@@ -64,7 +66,7 @@ body {
         left: 0;
         width: 75%;
         height: 100%;
-        background: linear-gradient(135deg, $primary 30%, #319733);
+        background: $bg_gradient;
         z-index: 1;
     }
 
@@ -115,7 +117,6 @@ body {
             position: absolute;
             top: -48px;
             right: 0;
-            filter: hue-rotate(75deg);
         }
     }
 
@@ -154,4 +155,51 @@ body {
 // 6. Features
 #features-section {
     background-color: $lightenPrimary;
+}
+
+
+// 7. other sections
+#other-sections {
+    padding: 4rem 0;
+}
+
+
+// 8. Footers
+#main-footer {
+    padding-top: 168px;
+
+    .footer-top {
+        position: relative;
+
+        .img-overlay {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -2;
+
+            img {
+                width: 692px;
+            }
+        }
+
+        .wrap-content {
+            position: relative;
+            padding: 4rem 0;
+            z-index: 2;
+
+            .bg-gradiant {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 75%;
+                height: 100%;
+                background: $bg_gradient;
+                z-index: -1;
+            }
+
+            p {
+                color: $lighten_paragraph;
+            }
+        }
+    }
 }
