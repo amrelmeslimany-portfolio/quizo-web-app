@@ -10,7 +10,9 @@
             2.1. Custom Classes
         ## Sections
         3. Header & Navbar
-        4. Why Us
+        4. Why Us Section
+        5. Specialist Section
+        6. Features
 */
 
 // 1. Imports
@@ -23,12 +25,18 @@ body {
     font-weight: 300;
 }
 
+.wrap-page {
+    overflow: hidden;
+}
+
 @for $c from 1 to 7 {
     h#{$c} {
         font-family: $font_family;
         font-weight: 600;
     }
 }
+
+
 
 // 2.1 Custom Classes
 .line-height-17 {
@@ -39,7 +47,9 @@ body {
     color: $darken_paragraph;
 }
 
-
+.text-darken-primary {
+    color: $darkenPrimary;
+}
 
 
 // 3. Header & Navbar
@@ -95,10 +105,8 @@ body {
 }
 
 
-// 4. Why Us
+// 4. Why Us Section
 #why-us {
-
-    height: 400px;
 
     .col-md-12 {
         position: relative;
@@ -111,4 +119,39 @@ body {
         }
     }
 
+}
+
+
+
+// 5. Specialist Section
+#specialist-section {
+    padding-top: 8rem;
+    padding-bottom: 4.49rem;
+
+    .col-md-13 {
+        position: relative;
+
+        .box-lighten-green {
+            position: absolute;
+            left: 160px;
+            top: 50px;
+            width: 250px;
+            height: 400px;
+            background-color: $lightenPrimary;
+            z-index: -1;
+        }
+    }
+
+    .specialist-right-img {
+        right: -100px;
+        width: 780px;
+    }
+
+}
+
+
+
+// 6. Features
+#features-section {
+    background-color: $lightenPrimary;
 }
