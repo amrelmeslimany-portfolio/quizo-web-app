@@ -15,6 +15,21 @@
         6. Features
         7. Other Sections
         8. Footers
+
+
+    # Responsive Screens
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { ... }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { ... }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { ... }
+
 */
 
 // 1. Imports
@@ -57,8 +72,8 @@ body {
 // 3. Header & Navbar
 #main-header {
     position: relative;
-    height: 670px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
+    overflow: hidden;
 
     .bg-overlay-gradient {
         position: absolute;
@@ -104,6 +119,67 @@ body {
             width: 759px;
         }
     }
+
+
+    // Responsive
+    @media (max-width: 1400px) {
+        .wrap-content {
+            .header-intro {
+                h1 {
+                    font-size: 4rem !important;
+                }
+
+                p {
+                    width: 35%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .wrap-content {
+            .header-intro {
+                p {
+                    width: 80%;
+                }
+            }
+        }
+
+        .img-overlay {
+            right: -30%;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .bg-overlay-gradient {
+            width: 100%;
+        }
+
+        .wrap-content {
+            .header-intro {
+                h1 {
+                    font-size: 3rem !important;
+                }
+
+                p {
+                    width: 100%;
+                }
+            }
+        }
+
+        .img-overlay {
+            display: none;
+        }
+    }
 }
 
 
@@ -117,8 +193,14 @@ body {
             position: absolute;
             top: -48px;
             right: 0;
+
+            // Responsive
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
     }
+
 
 }
 
@@ -126,6 +208,8 @@ body {
 
 // 5. Specialist Section
 #specialist-section {
+    overflow: hidden;
+
     padding-top: 8rem;
     padding-bottom: 4.49rem;
 
@@ -144,10 +228,66 @@ body {
     }
 
     .specialist-right-img {
-        right: -100px;
+        right: -150px;
         width: 780px;
     }
 
+
+    // Responsive
+    @media (max-width: 1200px) {
+        .first-box {
+            p {
+                width: 100% !important;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) and (min-width: 992px) {
+
+        .specialist-right-img {
+            width: 710px;
+        }
+
+    }
+
+    @media (max-width: 992px) and (min-width: 768px) {
+
+        .specialist-right-img {
+            width: 550px;
+            top: 20%;
+        }
+
+    }
+
+    @media (max-width: 992px) {
+        padding-top: 4.49rem;
+
+        .col-md-13 {
+            .box-lighten-green {
+                left: 0;
+                top: -72px;
+
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        .specialist-right-img {
+            display: none;
+        }
+
+        .col-md-13 {
+            .box-lighten-green {
+                left: 0;
+                top: -72px;
+                opacity: 0.4;
+            }
+        }
+
+        p {
+            width: 100% !important;
+        }
+    }
 }
 
 
@@ -155,18 +295,85 @@ body {
 // 6. Features
 #features-section {
     background-color: $lightenPrimary;
+
+    // Responsive
+    $borderStyle: 1px solid #dee2e6 !important;
+
+    @media (min-width:768px) and (max-width:992px) {
+        .wrap-item {
+            &:not(:nth-last-of-type(-n+4)) {
+                >div {
+                    border-bottom: $borderStyle;
+                }
+            }
+        }
+
+        .wrap-item {
+            &:not(:nth-of-type(4n)) {
+                >div {
+                    border-right: $borderStyle;
+                }
+            }
+        }
+
+        .wrap-item {
+            &:nth-of-type(4n) {
+                >div {
+                    border-right: none !important;
+                }
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        .wrap-item {
+            &:nth-of-type(even) {
+                >div {
+                    border-right: none !important;
+                }
+            }
+        }
+
+        .wrap-item:not(:last-of-type) {
+            >div {
+                border-bottom: $borderStyle;
+            }
+        }
+
+        .wrap-item:nth-of-type(11) {
+            >div {
+                border-bottom: none !important;
+            }
+        }
+    }
 }
 
 
 // 7. other sections
 #other-sections {
     padding: 4rem 0;
+
+    @media (max-width:768px) {
+        padding: 3rem 0;
+    }
+
+    @media (max-width:576px) {
+        padding: 3rem 0 2.5rem;
+    }
 }
 
 
 // 8. Footers
 #main-footer {
     padding-top: 168px;
+
+    @media (max-width:992px) {
+        padding-top: 84px;
+    }
+
+    @media (max-width:768px) {
+        padding-top: 40px;
+    }
 
     .footer-top {
         position: relative;
@@ -199,6 +406,10 @@ body {
 
             p {
                 color: $lighten_paragraph;
+
+                @media (max-width: 576px) {
+                    width: 75%;
+                }
             }
         }
     }
