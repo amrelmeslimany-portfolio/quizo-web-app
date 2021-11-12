@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title comes from Javascript -->
+    <title>
+        Quizo - Type Quiz
+    </title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <!-- Css Files -->
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css//libs/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrap-page quiz-page">
+        <div class="container">
+            <!-- Header -->
+            <div class="head p-4 text-center">
+                <a href="index.html" class="text-white">
+                    <h2 class="m-0 display-6">Quizo</h2>
+                </a>
+                <p class="display-md2">Designed And Developed By <a
+                        href="https://amrelmeslimany.github.io/my-portfolio/" class="fw-bold" target="_blank">Amr
+                        Elmeslimany</a></p>
+            </div>
+            <!-- Types Content -->
+            <div class="card wrap-all-content">
+                <div class="card-body">
+                    <div class="wrap-content">
+                        <!-- Header Which has questions and instructions -->
+                        <div class="question-instructions mb-5">
+                            <div class="d-flex">
+                                <div class="flex-grow-1 align-self-center text-secondary question">
+                                    <h4 class="text-secondary">Where is the egypt now because I don't know this question
+                                        ?</h4>
+                                    <span class="text-muted"><i class="mdi mdi-help-circle-outline me-1 "></i> Here any
+                                        point you want to put</span>
+                                </div>
+                                <div class="flex-shrink-0 ms-2 text-center instructions">
+                                    <span class="d-block display-lg1 text-primary inst-timer">05:55</span>
+                                    <span
+                                        class="display-md text-secondary text-uppercase inst-type-question">programming</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- The choices or answers -->
+                        <div class="choices-wrap mt-5">
+                            <div class="row g-3">
+                                <div class="col-md-19">
+                                    <ul class="list-group list-group-flush">
+                                        <!-- 
+                                            correct-answer class    =>    icon (<i class="float-end mdi mdi-check-bold align-middle text-primary"></i>)
+                                            wrong-answer class      =>    icon (<i class="float-end mdi mdi-close-thick align-middle text-white"></i>)
+                                         -->
+                                        <label class="list-group-item list-group-item-action  border-light">
+                                            <input class="form-check-input me-1" type="radio" name="choice[]" value="1"
+                                                aria-label="...">
+                                            <span class="display-md2">This is the choice number one</span>
+
+                                        </label>
+                                        <label class="list-group-item list-group-item-action border-light">
+                                            <input class="form-check-input me-1" type="radio" name="choice[]" value="2"
+                                                aria-label="...">
+                                            <span class="display-md2">This is the choice number one</span>
+
+                                        </label>
+                                        <label class="list-group-item list-group-item-action  border-light">
+                                            <input class="form-check-input me-1" type="radio" name="choice[]" value="3"
+                                                aria-label="...">
+                                            <span class="display-md2">This is the choice number one</span>
+                                        </label>
+                                        <label class="list-group-item list-group-item-action  border-light">
+                                            <input class="form-check-input me-1" type="radio" name="choice[]" value="4"
+                                                aria-label="...">
+                                            <span class="display-md2">This is the choice number one</span>
+                                        </label>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5 align-self-center">
+                                    <div class="text-center">
+                                        <span>Questions : <span class="current-question-number">07</span> / <strong
+                                                class="questions-number">09</strong></span>
+                                        <hr class="bg-light opacity-100">
+                                        <div>
+                                            <span class="d-block mb-1 text-nowrap">Correct Answers</span>
+                                            <div class="row g-0">
+                                                <div class="col-12 align-self-center">
+                                                    <h6 class="display-lg1 text-primary mb-0 correct-asnwers">02</h6>
+                                                </div>
+                                                <div class="col-12 align-self-center">
+                                                    <i class="mdi mdi-emoticon-sad-outline display-6 text-warning"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="bg-light opacity-100">
+                                        <span>Wrong Answers : <strong
+                                                class="text-danger wrong-answers">07</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Options -->
+            <div class="text-center mt-sm-5 mb-sm-1">
+                <button class="btn btn-primary mt-3 mb-sm-5 disabled to-next-questions-btn">Show The Answer</button>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer id="main-footer">
+            <div class="footer-bottom bg-secondary py-4 mt-sm-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class=" mb-2 mb-md-0">
+                                <!-- Brand -->
+                                <a class="fw-bold display-5 " href="index.html">
+                                    <strong>Quizo</strong>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-14 align-self-center">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a href="https://amrelmeslimany.github.io/my-portfolio/" target="_blank"
+                                        class="text-white-50 display-md2 me-md-2">Why Us</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="quiz.html" class="text-white-50 display-md2 me-md-2">Quiz</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://amrelmeslimany.github.io/my-portfolio/" target="_blank"
+                                        class="text-white-50 display-md2 me-md-2">Claims</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://amrelmeslimany.github.io/my-portfolio/" target="_blank"
+                                        class="text-white-50 display-md2 me-md-2">Careers</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://amrelmeslimany.github.io/my-portfolio/" target="_blank"
+                                        class="text-white-50 display-md2 me-md-2">Find Broker</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://amrelmeslimany.github.io/my-portfolio/" target="_blank"
+                                        class="text-white-50 display-md2 me-md-2">Media</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://amrelmeslimany.github.io/my-portfolio/" target="_blank"
+                                        class="text-white-50 display-md2">Trisure Online</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

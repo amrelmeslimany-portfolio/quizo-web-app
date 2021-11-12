@@ -1,0 +1,95 @@
+[
+    {
+        "quiz": [
+            {
+                "_id": "1",
+                "question": "Where is Egypt and how we can love it so much ?",
+                "questionType" : "programming",
+                "choices": [
+                    {
+                        "choiceNumber": 1,
+                        "choiceText": "Africai"
+                    },
+                    {
+                        "choiceNumber": 2,
+                        "choiceText": "Asia"
+                    },
+                    {
+                        "choiceNumber": 3,
+                        "choiceText": "Europe"
+                    },
+                    {
+                        "choiceNumber": 4,
+                        "choiceText": "Australia"
+                    }
+                ],
+                "notice": "You can choice 2 answers because I love you",
+                "correctAnswer": "1",
+                "questionDuration": {
+                    "durationNumber": 5,
+                    "durationType" : "second"
+                }
+            }
+            ,
+            {
+                "_id": "2",
+                "question":"question two ?",
+                "questionType" : "art",
+                "choices": [
+                    {
+                        "choiceNumber": 1,
+                        "choiceText": "choice 1"
+                    },
+                    {
+                        "choiceNumber": 2,
+                        "choiceText": "choice 2"
+                    },
+                    {
+                        "choiceNumber": 3,
+                        "choiceText": "choice 3"
+                    },
+                    {
+                        "choiceNumber": 4,
+                        "choiceText": "choice 4"
+                    }
+                ],
+                "notice": "",
+                "correctAnswer": "2",
+                "questionDuration": {
+                    "durationNumber": 2,
+                    "durationType" : "minute"
+                }
+            }
+            ,
+            {
+                "_id": "3",
+                "question":"question three ?",
+                "questionType" : "art",
+                "choices": [
+                    {
+                        "choiceNumber": 1,
+                        "choiceText": "choice 1"
+                    },
+                    {
+                        "choiceNumber": 2,
+                        "choiceText": "choice 2"
+                    },
+                    {
+                        "choiceNumber": 3,
+                        "choiceText": "choice 3"
+                    },
+                    {
+                        "choiceNumber": 4,
+                        "choiceText": "choice 4"
+                    }
+                ],
+                "notice":"",
+                "correctAnswer": "3",
+                "questionDuration": {
+                    "durationNumber": 120,
+                    "durationType" : "second"
+                }
+            }
+        ]
+    }
+]
