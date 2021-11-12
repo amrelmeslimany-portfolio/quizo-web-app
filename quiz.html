@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Quizo - The Quiz</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <!-- Css Files -->
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css//libs/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrap-page quiz-page">
+        <div class="container">
+            <!-- Header -->
+            <div class="head p-4 text-center">
+                <a href="index.html" class="text-white">
+                    <h2 class="m-0 display-6">Quizo</h2>
+                </a>
+                <p class="display-md2">Designed And Developed By <a
+                        href="https://amrelmeslimany.github.io/my-portfolio/" class="fw-bold" target="_blank">Amr
+                        Elmeslimany</a></p>
+            </div>
+            <!-- Types Content -->
+            <div class="card wrap-all-content">
+                <div class="card-body">
+                    <div class="wrap-content">
+                        <article class="d-block mb-5">
+                            <h4 class="text-capitalize text-secondary mb-0">Choose Type of th quiz</h4>
+                            <p>Please select the type of the quiz which you want to take</p>
+                        </article>
+                        <div class="row g-3">
+                            <div class="col-lg-6 col-md-8 col-12">
+                                <div class="card border-0 active question-type-item" data-quiz-type="programming">
+                                    <div class="card-body bg-primary bg-opacity-25 text-center">
+                                        <i class="mdi mdi-xml display-5 text-primary d-block"></i>
+                                        <h6>Programming</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12">
+                                <div class="card border-0 question-type-item" data-quiz-type="mathimatics">
+                                    <div class="card-body bg-primary bg-opacity-25 text-center">
+                                        <i class="mdi mdi-numeric-0-box-multiple display-5 text-primary d-block"></i>
+                                        <h6>Mathimatics</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12">
+                                <div class="card border-0 question-type-item" data-quiz-type="litrature">
+                                    <div class="card-body bg-primary bg-opacity-25 text-center">
+                                        <i class="mdi mdi-book display-5 text-primary d-block"></i>
+                                        <h6>Litrature</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12">
+                                <div class="card border-0 question-type-item" data-quiz-type="pyhisics">
+                                    <div class="card-body bg-primary bg-opacity-25 text-center">
+                                        <i class="mdi mdi-atom-variant display-5 text-primary d-block"></i>
+                                        <h6>Pyhisics</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12">
+                                <div class="card border-0 question-type-item" data-quiz-type="chemistry">
+                                    <div class="card-body bg-primary bg-opacity-25 text-center">
+                                        <i class="mdi mdi-flask display-5 text-primary d-block"></i>
+                                        <h6>Chemistry</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12">
+                                <div class="card border-0 question-type-item" data-quiz-type="engineering">
+                                    <div class="card-body bg-primary bg-opacity-25 text-center">
+                                        <i class="mdi mdi-pencil-ruler display-5 text-primary d-block"></i>
+                                        <h6>Engineering</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12">
+                                <div class="card border-0 question-type-item" data-quiz-type="economics">
+                                    <div class="card-body bg-primary bg-opacity-25 text-center">
+                                        <i class="mdi mdi-finance display-5 text-primary d-block"></i>
+                                        <h6>Economics</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12">
+                                <div class="card border-0 question-type-item" data-quiz-type="art">
+                                    <div class="card-body bg-primary bg-opacity-25 text-center">
+                                        <i class="mdi mdi-palette display-5 text-primary d-block"></i>
+                                        <h6>Art</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Options -->
+            <div class="text-center mt-sm-5 mb-sm-1">
+                <a href="questions.html?quizType=programming" class="btn btn-primary mt-3 to-questions-btn">Ok,To
+                    Questions</a>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer id="main-footer">
+            <div class="footer-bottom bg-secondary py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class=" mb-2 mb-md-0">
+                                <!-- Brand -->
+                                <a class="fw-bold display-5 " href="index.html">
+                                    <strong>Quizo</strong>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-14 align-self-center">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a href="https://amrelmeslimany.github.io/my-portfolio/" target="_blank"
+                                        class="text-white-50 display-md2 me-md-2">Why Us</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="quiz.html" class="text-white-50 display-md2 me-md-2">Quiz</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://amrelmeslimany.github.io/my-portfolio/" target="_blank"
+                                        class="text-white-50 display-md2 me-md-2">Claims</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://amrelmeslimany.github.io/my-portfolio/" target="_blank"
+                                        class="text-white-50 display-md2 me-md-2">Careers</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://amrelmeslimany.github.io/my-portfolio/" target="_blank"
+                                        class="text-white-50 display-md2 me-md-2">Find Broker</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://amrelmeslimany.github.io/my-portfolio/" target="_blank"
+                                        class="text-white-50 display-md2 me-md-2">Media</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://amrelmeslimany.github.io/my-portfolio/" target="_blank"
+                                        class="text-white-50 display-md2">Trisure Online</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

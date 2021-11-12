@@ -13,8 +13,9 @@
         4. Why Us Section
         5. Specialist Section
         6. Features
-        7. Other Sections
-        8. Footers
+        7. Start Quiz Section
+        8. Other Sections
+        9. Footers
 
 
     # Responsive Screens
@@ -348,6 +349,18 @@ body {
     }
 }
 
+// 7. Start Section
+#start-quiz-section {
+    background-color: $secondry;
+
+    h3 {
+        color: $white;
+    }
+
+    p {
+        color: $darken_paragraph;
+    }
+}
 
 // 7. other sections
 #other-sections {
@@ -412,5 +425,87 @@ body {
                 }
             }
         }
+    }
+}
+
+
+
+
+// 9. The quiz page
+.quiz-page {
+    .head {
+        background: $bg_gradient;
+
+        p {
+            color: $lighten_paragraph;
+
+            a {
+                color: $white;
+                display: inline-block;
+                animation: scale-anm 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite forwards alternate;
+            }
+        }
+    }
+
+    .wrap-all-content {
+
+        .wrap-content {
+            .card.question-type-item {
+                cursor: pointer;
+
+                i.mdi {
+                    transition: $transition;
+                }
+
+                &.active,
+                &:hover {
+                    i.mdi {
+                        transform: scale(1.1);
+                        color: $secondry !important;
+                    }
+                }
+
+
+
+            }
+
+
+            .choices-wrap {
+                ul.list-group {
+                    .correct-answer {
+                        background-color: $lightenPrimary;
+                    }
+
+                    .wrong-answer {
+                        background-color: rgb(230, 142, 142);
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+
+
+    #main-footer {
+        padding-top: 1rem;
+    }
+}
+
+
+
+
+// Animation
+@keyframes scale-anm {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.02);
+        color: rgba($white, 0.4);
     }
 }

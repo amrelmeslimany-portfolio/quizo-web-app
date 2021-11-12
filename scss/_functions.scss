@@ -2,7 +2,7 @@
 $primary: var(--bs-primary);
 $lightenPrimary: rgba(#5d9731, $alpha: 0.1);
 $darkenPrimary: darken(#5d9731, 12%);
-$secondry: var(--bs-secondry);
+$secondry: var(--bs-secondary);
 $lighten_paragraph: lighten(gray, 40%);
 $darken_paragraph: lighten(gray, 18%);
 $bg_gradient: linear-gradient(135deg, $primary 30%, #319733);
@@ -10,3 +10,7 @@ $white: #fff;
 // Font
 $font_family: 'Mohave',
 sans-serif;
+
+
+// Animation
+$transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
