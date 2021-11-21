@@ -19,6 +19,8 @@ This site I created for training on **OOP Js** for create small quiz with UI des
 9. deoploy the app on github
 
 ---
+## You can browse the page from this link : [quiz link](https://amrelmeslimany-portfolio.github.io/quizo-web-app/)
+---
 
 ## Colors Used:
 
