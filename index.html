@@ -417,8 +417,26 @@
             </div>
         </footer>
     </div>
+    <button type="button" class="d-none" data-bs-toggle="modal" id="showModal" data-bs-target="#showResult">
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="showResult" tabindex="-1" aria-labelledby="showResultLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body text-center p-2">
+                    <a href="quiz.html" class="btn btn-primary">Take A Quiz</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- Scripts -->
     <script src="./js/libs/bootstrap.bundle.min.js"></script>
+    <script>
+        setTimeout(() => {
+            document.querySelector("#showModal").click();
+        }, 5 * 1000)
+    </script>
 </body>
 
 </html>

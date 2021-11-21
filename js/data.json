@@ -3,91 +3,149 @@
         "quiz": [
             {
                 "_id": "1",
-                "question": "Where is Egypt and how we can love it so much ?",
+                "question": "what is OOP ?",
                 "questionType" : "programming",
                 "choices": [
                     {
                         "choiceNumber": 1,
-                        "choiceText": "Africai"
+                        "choiceText": "object oriented programming"
                     },
                     {
                         "choiceNumber": 2,
-                        "choiceText": "Asia"
+                        "choiceText": "omega oposite pen"
                     },
                     {
                         "choiceNumber": 3,
-                        "choiceText": "Europe"
+                        "choiceText": "ola olympies perfect"
                     },
                     {
                         "choiceNumber": 4,
-                        "choiceText": "Australia"
+                        "choiceText": "olio ohano pera"
                     }
                 ],
-                "notice": "You can choice 2 answers because I love you",
+                "notice": "",
                 "correctAnswer": "1",
                 "questionDuration": {
-                    "durationNumber": 5,
-                    "durationType" : "second"
+                    "durationNumber": 5 , 
+                    "durationByMinute" : true
                 }
             }
             ,
             {
                 "_id": "2",
-                "question":"question two ?",
-                "questionType" : "art",
+                "question":"what is HTML",
+                "questionType" : "programming",
                 "choices": [
                     {
                         "choiceNumber": 1,
-                        "choiceText": "choice 1"
+                        "choiceText": "hyper total mark language"
                     },
                     {
                         "choiceNumber": 2,
-                        "choiceText": "choice 2"
+                        "choiceText": "hyper markup language"
                     },
                     {
                         "choiceNumber": 3,
-                        "choiceText": "choice 3"
+                        "choiceText":"hypertext markup language"
                     },
                     {
                         "choiceNumber": 4,
-                        "choiceText": "choice 4"
+                        "choiceText": "hypertext many language"
                     }
                 ],
                 "notice": "",
-                "correctAnswer": "2",
+                "correctAnswer": "3",
                 "questionDuration": {
-                    "durationNumber": 2,
-                    "durationType" : "minute"
+                    "durationNumber": 53,
+                    "durationByMinute" : false
                 }
             }
             ,
             {
                 "_id": "3",
-                "question":"question three ?",
-                "questionType" : "art",
+                "question":"5-5*5+5",
+                "questionType" : "mathimatics",
                 "choices": [
                     {
                         "choiceNumber": 1,
-                        "choiceText": "choice 1"
+                        "choiceText": "-18"
                     },
                     {
                         "choiceNumber": 2,
-                        "choiceText": "choice 2"
+                        "choiceText": "-15"
                     },
                     {
                         "choiceNumber": 3,
-                        "choiceText": "choice 3"
+                        "choiceText": "-13"
                     },
                     {
                         "choiceNumber": 4,
-                        "choiceText": "choice 4"
+                        "choiceText": "13"
                     }
                 ],
                 "notice":"",
-                "correctAnswer": "3",
+                "correctAnswer": "2",
                 "questionDuration": {
-                    "durationNumber": 120,
-                    "durationType" : "second"
+                    "durationNumber": 20,
+                    "durationByMinute" : false
+                }
+            },
+            {
+                "_id": "4",
+                "question":"2<sup>5</sup>",
+                "questionType" : "mathimatics",
+                "choices": [
+                    {
+                        "choiceNumber": 1,
+                        "choiceText": "30"
+                    },
+                    {
+                        "choiceNumber": 2,
+                        "choiceText": "33.5"
+                    },
+                    {
+                        "choiceNumber": 3,
+                        "choiceText": "33"
+                    },
+                    {
+                        "choiceNumber": 4,
+                        "choiceText": "32"
+                    }
+                ],
+                "notice":"",
+                "correctAnswer": "4",
+                "questionDuration": {
+                    "durationNumber": 5,
+                    "durationByMinute" : false
+                }
+            },
+            {
+                "_id": "5",
+                "question":"8 bit equals ?",
+                "questionType" : "programming",
+                "choices": [
+                    {
+                        "choiceNumber": 1,
+                        "choiceText": "8byte"
+                    },
+                    {
+                        "choiceNumber": 2,
+                        "choiceText": "byte"
+                    },
+                    {
+                        "choiceNumber": 3,
+                        "choiceText": "2byte"
+                    },
+                    {
+                        "choiceNumber": 4,
+                        "choiceText": "4byte"
+                    }
+                ],
+                "notice":"",
+                "correctAnswer": "2",
+                "questionDuration": {
+                    "durationNumber": 5,
+                    "durationByMinute" : false
                 }
             }
         ]
