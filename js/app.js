@@ -25,7 +25,7 @@ if (typeQuestionsItems.length > 0) {
 
 // Handle Questions Page (Questions Page)
 if (location.pathname.includes("questions.html")) {
-  HandleEvents.getResult("/js/data.json").then((data) => {
+  HandleEvents.getResult("https://amrelmeslimany-portfolio.github.io/quizo-web-app/js/data.json").then((data) => {
     let { quiz } = data[0];
     let elements = {
       questionsWrapContentTag: ".quiz-page .wrap-all-content .wrap-content",
