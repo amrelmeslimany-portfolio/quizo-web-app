@@ -41,6 +41,10 @@
 body {
     font-family: $font_family;
     font-weight: 300;
+
+    &.ready-page {
+        overflow: hidden;
+    }
 }
 
 .wrap-page {
@@ -52,6 +56,11 @@ body {
         font-family: $font_family;
         font-weight: 600;
     }
+}
+
+
+label {
+    cursor: pointer;
 }
 
 
@@ -488,10 +497,21 @@ body {
 
     }
 
-
+    .show-result {
+        display: none;
+    }
 
     #main-footer {
         padding-top: 1rem;
+    }
+}
+
+.overflow-bg-startbtn {
+    background: $bg_gradient;
+
+    button {
+        width: 120px;
+        height: 120px;
     }
 }
 

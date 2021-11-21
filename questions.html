@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="ready-page">
     <div class="wrap-page quiz-page">
         <div class="container">
             <!-- Header -->
@@ -40,15 +40,17 @@
                         <div class="question-instructions mb-5">
                             <div class="d-flex">
                                 <div class="flex-grow-1 align-self-center text-secondary question">
-                                    <h4 class="text-secondary">Where is the egypt now because I don't know this question
-                                        ?</h4>
-                                    <span class="text-muted"><i class="mdi mdi-help-circle-outline me-1 "></i> Here any
-                                        point you want to put</span>
+                                    <h4 class="text-secondary text-capitalize placeholder-glow"><span
+                                            class="placeholder col-18"></span></h4>
+                                    <div class="text-muted"><i class="mdi mdi-help-circle-outline me-1"></i>
+                                        <span class="placeholder-glow note"><small
+                                                class="placeholder col-8"></small></span></div>
                                 </div>
                                 <div class="flex-shrink-0 ms-2 text-center instructions">
-                                    <span class="d-block display-lg1 text-primary inst-timer">05:55</span>
                                     <span
-                                        class="display-md text-secondary text-uppercase inst-type-question">programming</span>
+                                        class="display-md text-secondary text-uppercase placeholder-glow inst-type-question"><small
+                                            class="placeholder col-10"></small></span>
+                                    <span class="d-block display-lg1 text-primary inst-timer">00:00</span>
                                 </div>
                             </div>
                         </div>
@@ -58,22 +60,16 @@
                         <div class="choices-wrap mt-5">
                             <div class="row g-3">
                                 <div class="col-md-19">
-                                    <ul class="list-group list-group-flush">
-                                        <!-- 
-                                            correct-answer class    =>    icon (<i class="float-end mdi mdi-check-bold align-middle text-primary"></i>)
-                                            wrong-answer class      =>    icon (<i class="float-end mdi mdi-close-thick align-middle text-white"></i>)
-                                         -->
+                                    <ul class="list-group list-group-flush choices-wrap-ul">
                                         <label class="list-group-item list-group-item-action  border-light">
                                             <input class="form-check-input me-1" type="radio" name="choice[]" value="1"
                                                 aria-label="...">
                                             <span class="display-md2">This is the choice number one</span>
-
                                         </label>
                                         <label class="list-group-item list-group-item-action border-light">
                                             <input class="form-check-input me-1" type="radio" name="choice[]" value="2"
                                                 aria-label="...">
                                             <span class="display-md2">This is the choice number one</span>
-
                                         </label>
                                         <label class="list-group-item list-group-item-action  border-light">
                                             <input class="form-check-input me-1" type="radio" name="choice[]" value="3"
@@ -96,16 +92,18 @@
                                             <span class="d-block mb-1 text-nowrap">Correct Answers</span>
                                             <div class="row g-0">
                                                 <div class="col-12 align-self-center">
-                                                    <h6 class="display-lg1 text-primary mb-0 correct-asnwers">02</h6>
+                                                    <h6 class="display-lg1 text-primary mb-0 correct-asnwers-number">02
+                                                    </h6>
                                                 </div>
                                                 <div class="col-12 align-self-center">
-                                                    <i class="mdi mdi-emoticon-sad-outline display-6 text-warning"></i>
+                                                    <i
+                                                        class="mdi mdi-emoticon-sad-outline display-6 text-warning result-emotion"></i>
                                                 </div>
                                             </div>
                                         </div>
                                         <hr class="bg-light opacity-100">
                                         <span>Wrong Answers : <strong
-                                                class="text-danger wrong-answers">07</strong></span>
+                                                class="text-danger wrong-answers-number">07</strong></span>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +114,14 @@
             </div>
             <!-- Options -->
             <div class="text-center mt-sm-5 mb-sm-1">
-                <button class="btn btn-primary mt-3 mb-sm-5 disabled to-next-questions-btn">Show The Answer</button>
+                <button class="btn btn-primary mt-3 mb-sm-5 disabled to-next-questions-btn"
+                    data-btn-role="showAnswer">Show The Answer</button>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary  mt-3 mb-sm-5 show-result" data-bs-toggle="modal"
+                    data-bs-target="#showResult">
+                    Result
+                </button>
             </div>
         </div>
 
@@ -171,8 +176,49 @@
         </footer>
     </div>
 
+    <!-- Start Quiz Answer BTN -->
+    <div
+        class="overflow-bg-startbtn position-absolute w-100 h-100 top-0 start-0  d-flex justify-content-center align-items-center flex-column overflow-hidden">
+        <h3 class="text-white mb-3">When You Ready Click Start</h3>
+        <button class="btn btn-secondary rounded-circle display-lg2 btn-start">Start</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="showResult" tabindex="-1" aria-labelledby="showResultLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header align-items-center flex-column px-1 pt-3 pb-0">
+                    <span>Your Result</span>
+                    <h5 class="modal-title" id="showResultLabel"><i
+                            class="mdi mdi-emoticon-happy text-warning display-3 face-emotion"></i>
+                    </h5>
+                </div>
+                <div class="modal-body text-center p-1">
+                    <div>
+                        <p class="align-middle mb-1">Correct Answers</p>
+                        <h2 class="d-inline-block text-primary fw-bolder correct-result-number">02</h2>
+                        <h6 class="d-inline-block allquestion-result-number">/10</h6>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="align-middle mb-1">Incorrect Answers</p>
+                        <h5 class="d-inline-block text-danger wrong-result-number">09</h5>
+                        <h6 class="d-inline-block mb-0 allquestion-result-number">/10</h6>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p>Thanks For Your Time <i class="mdi mdi-heart text-danger"></i></p>
+                </div>
+                <div class="modal-footer align-items-center justify-content-center p-1">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
-    <script src="js/app.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js" type="module"></script>
 </body>
 
 </html>
