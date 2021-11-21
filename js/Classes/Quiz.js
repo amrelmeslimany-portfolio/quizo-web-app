@@ -285,7 +285,7 @@ export class HandlQuestions {
   // Lunch warning music with time
   #stillingWork(timer) {
     if (timer <= 8) {
-      new Audio("../../assets/Sounds/timer.mp3").play();
+      document.querySelector("#timer-audio").play();
     }
   }
   // Handle Timer
@@ -412,7 +412,7 @@ export class HandlQuestions {
 
     if (choiced == correct) {
       // Lunch Voice
-      new Audio("../assets/Sounds/mixkit-correct-answer-reward-952.wav").play();
+      document.querySelector("#correct-answer-audio").play();
 
       // Add Class
       parentSelectedITem.classList.add("correct-answer");
@@ -427,9 +427,7 @@ export class HandlQuestions {
       this.#resultData.correctNumbers++;
     } else if (choiced != correct || choiced == 0) {
       // Lunch Voice
-      new Audio(
-        "../assets/Sounds/mixkit-wrong-answer-fail-notification-946.wav"
-      ).play();
+      document.querySelector("#fail-answer-audio").play();
 
       // Add Classes
       if (parentSelectedITem) {
@@ -475,9 +473,7 @@ export class HandlQuestions {
 
     this.#modalResultTag.btnOpenModal.style.display = "inline-block";
     this.#modalResultTag.btnOpenModal.addEventListener("click", () => {
-      new Audio(
-        "../../assets/Sounds/mixkit-musical-alert-notification-2309.wav"
-      ).play();
+      document.querySelector("#alert-notifaction-audio").play();
     });
   }
 
